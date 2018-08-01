@@ -1,4 +1,4 @@
-import schema from "../theme-schema";
+import baseTheme from "../themes/baseTheme";
 import basicsReadme from "../basics/README.md";
 import densityReadme from "./DENSITY_README.md";
 import colorSchemeReadme from "./COLOR_SCHEME_README.md";
@@ -15,87 +15,87 @@ function filterMatchByKey(o, keyFragment) {
 export default [
   {
     description: "Basics - Border radii",
-    schema: filterMatchByKey(schema, "BASICS.BORDER_RADII"),
+    schema: filterMatchByKey(baseTheme, "BASICS.BORDER_RADII"),
     readme: basicsReadme
   },
   {
     description: "Basics - Border widths",
-    schema: filterMatchByKey(schema, "BASICS.BORDER_WIDTHS"),
+    schema: filterMatchByKey(baseTheme, "BASICS.BORDER_WIDTHS"),
     readme: basicsReadme
   },
   {
     description: "Basics - Colors",
-    schema: filterMatchByKey(schema, "BASICS.COLORS"),
+    schema: filterMatchByKey(baseTheme, "BASICS.COLORS"),
     readme: basicsReadme
   },
   {
     description: "Basics - Font families",
-    schema: filterMatchByKey(schema, "BASICS.FONT_FAMILIES"),
+    schema: filterMatchByKey(baseTheme, "BASICS.FONT_FAMILIES"),
     readme: basicsReadme
   },
   {
     description: "Basics - Font sizes",
-    schema: filterMatchByKey(schema, "BASICS.FONT_SIZES"),
+    schema: filterMatchByKey(baseTheme, "BASICS.FONT_SIZES"),
     readme: basicsReadme
   },
   {
     description: "Basics - Font weights",
-    schema: filterMatchByKey(schema, "BASICS.FONT_WEIGHTS"),
+    schema: filterMatchByKey(baseTheme, "BASICS.FONT_WEIGHTS"),
     readme: basicsReadme
   },
   {
     description: "Basics - Line heights",
-    schema: filterMatchByKey(schema, "BASICS.LINE_HEIGHTS"),
+    schema: filterMatchByKey(baseTheme, "BASICS.LINE_HEIGHTS"),
     readme: basicsReadme
   },
   {
     description: "Basics - Shadows",
-    schema: filterMatchByKey(schema, "BASICS.SHADOWS"),
+    schema: filterMatchByKey(baseTheme, "BASICS.SHADOWS"),
     readme: basicsReadme
   },
   {
     description: "Basics - Spacings",
-    schema: filterMatchByKey(schema, "BASICS.SPACINGS"),
+    schema: filterMatchByKey(baseTheme, "BASICS.SPACINGS"),
     readme: basicsReadme
   },
   {
     description: "Color scheme",
-    schema: filterMatchByKey(schema, "COLOR_SCHEME"),
+    schema: filterMatchByKey(baseTheme, "COLOR_SCHEME"),
     readme: colorSchemeReadme
   },
   {
     description: "Density",
-    schema: filterMatchByKey(schema, "DENSITY"),
+    schema: filterMatchByKey(baseTheme, "DENSITY"),
     readme: densityReadme
   },
   {
     description: "Component - Checkbox",
-    schema: filterMatchByKey(schema, /^CHECKBOX./),
+    schema: filterMatchByKey(baseTheme, /^CHECKBOX./),
     readme: undefined
   },
   {
     description: "Component - Forms",
-    schema: filterMatchByKey(schema, /^FORM_FIELD./),
+    schema: filterMatchByKey(baseTheme, /^FORM_FIELD./),
     readme: undefined
   },
   {
     description: "Component - Input",
-    schema: filterMatchByKey(schema, /^INPUT./),
+    schema: filterMatchByKey(baseTheme, /^INPUT./),
     readme: undefined
   },
   {
     description: "Component - Label",
-    schema: filterMatchByKey(schema, /^LABEL./),
+    schema: filterMatchByKey(baseTheme, /^LABEL./),
     readme: undefined
   },
   {
     description: "Component - Menu",
-    schema: filterMatchByKey(schema, /^MENU./),
+    schema: filterMatchByKey(baseTheme, /^MENU./),
     readme: undefined
   },
   {
     description: "Component - Text area",
-    schema: filterMatchByKey(schema, /^TEXT_AREA./),
+    schema: filterMatchByKey(baseTheme, /^TEXT_AREA./),
     readme: undefined
   }
 ];
